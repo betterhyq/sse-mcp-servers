@@ -1,4 +1,4 @@
-name: test_all
+name: Test Node and Python
 
 on:
   push:
