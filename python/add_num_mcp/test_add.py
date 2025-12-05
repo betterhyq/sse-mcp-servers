@@ -1,9 +1,12 @@
-from . import add_tool
 from pytest import fixture
+
+from . import add_tool
+
 
 @fixture
 def add():
     return add_tool.add
+
 
 def test_add(add):
     assert add(1, 2) == "3"

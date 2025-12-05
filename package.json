@@ -17,7 +17,9 @@
     "test:node": "vitest run node/",
     "test:python": "uv run pytest python/",
     "format:node": "prettier --write .",
-    "lint:node": "eslint node/ --fix"
+    "format:python": "uv run black python/ && uv run isort python/",
+    "lint:node": "eslint node/ --fix",
+    "lint:python": "uv run flake8 python/ && uv run mypy python/"
   },
   "devDependencies": {
     "@eslint/css": "0.12.0",
