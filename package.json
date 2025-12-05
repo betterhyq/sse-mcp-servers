@@ -24,7 +24,10 @@
     "bump:major": "pnpm run bump --major",
     "bump:minor": "pnpm run bump --minor",
     "bump:patch": "pnpm run bump --patch",
-    "commit": "cz"
+    "commit": "cz",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "@eslint/css": "0.12.0",
@@ -41,6 +44,7 @@
     "typescript": "5.9.3",
     "typescript-eslint": "8.48.1",
     "vite": "7.2.6",
+    "vitepress": "2.0.0-alpha.15",
     "vitest": "4.0.15"
   },
   "dependencies": {
