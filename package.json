@@ -9,10 +9,10 @@
   ],
   "scripts": {
     "build": "tsc && vite build",
-    "start": "node dist/sse-mcp-servers.js",
+    "start": "node node/dist/sse-mcp-servers.js",
     "format": "prettier --write .",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint node/",
+    "lint:fix": "eslint node/ --fix"
   },
   "devDependencies": {
     "@eslint/css": "0.12.0",
@@ -31,5 +31,6 @@
     "@modelcontextprotocol/sdk": "1.24.3",
     "fastmcp": "3.24.0",
     "zod": "4.1.13"
-  }
+  },
+  "packageManager": "pnpm@10.13.1"
 }
