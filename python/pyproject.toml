@@ -3,7 +3,5 @@ name = "python"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "oxygent==1.0.8",
-]
+requires-python = "==3.10.19"
+dependencies = ["fastmcp==2.13.3", "oxygent==1.0.8"]

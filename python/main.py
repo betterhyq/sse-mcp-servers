@@ -1,6 +1,5 @@
-def main():
-    print("Hello from python!")
-
+import add_num_mcp
+    
 
 if __name__ == "__main__":
-    main()
+    add_num_mcp.main(3000)
