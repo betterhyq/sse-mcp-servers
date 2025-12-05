@@ -7,20 +7,17 @@
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/counter.umd.cjs",
-  "module": "./dist/counter.js",
-  "types": "./index.d.ts",
-  "exports": {
-    "types": "./index.d.ts",
-    "import": "./dist/counter.js",
-    "require": "./dist/counter.umd.cjs"
-  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "start": "node dist/sse-mcp-servers.js"
   },
   "devDependencies": {
     "typescript": "5.9.3",
     "vite": "7.2.6"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.24.3",
+    "fastmcp": "3.24.0",
+    "zod": "4.1.13"
   }
 }
