@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/betterhyq/sse-mcp-servers/compare/v0.0.4...v0.0.5)
+
+### 🚀 Enhancements
+
+- 更新lock文件 ([b8c857a](https://github.com/betterhyq/sse-mcp-servers/commit/b8c857a))
+- 更新action名称 ([971a703](https://github.com/betterhyq/sse-mcp-servers/commit/971a703))
+- 更新action名称 ([751bcfb](https://github.com/betterhyq/sse-mcp-servers/commit/751bcfb))
+- 初始化vitepress ([f5c4da7](https://github.com/betterhyq/sse-mcp-servers/commit/f5c4da7))
+- 配置vitepress workflow ([17ba5a3](https://github.com/betterhyq/sse-mcp-servers/commit/17ba5a3))
+- 更新cicd的名称 ([909e5dd](https://github.com/betterhyq/sse-mcp-servers/commit/909e5dd))
+
+### 🤖 CI
+
+- **docs:** 更新vitepress的工作流 ([9398691](https://github.com/betterhyq/sse-mcp-servers/commit/9398691))
+- 允许手动触发测试 ([a549278](https://github.com/betterhyq/sse-mcp-servers/commit/a549278))
+
+### ❤️ Contributors
+
+- Heyongqi10 <heyongqi10@jd.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/betterhyq/sse-mcp-servers/compare/v0.0.3...v0.0.4)
