@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/betterhyq/sse-mcp-servers/compare/v0.0.3...v0.0.4)
+
+### 🚀 Enhancements
+
+- 配置node版本的ci ([6dc9a21](https://github.com/betterhyq/sse-mcp-servers/commit/6dc9a21))
+- 更新node-ci的名称 ([3264573](https://github.com/betterhyq/sse-mcp-servers/commit/3264573))
+- 更新node-ci的名称 ([64c4950](https://github.com/betterhyq/sse-mcp-servers/commit/64c4950))
+- 更新测试的cicd ([e739889](https://github.com/betterhyq/sse-mcp-servers/commit/e739889))
+- 更新文件展示 ([86e7d12](https://github.com/betterhyq/sse-mcp-servers/commit/86e7d12))
+- 更新CICD展示 ([50ff03a](https://github.com/betterhyq/sse-mcp-servers/commit/50ff03a))
+
+### 🔥 Performance
+
+- 优化提交信息 ([6591fd3](https://github.com/betterhyq/sse-mcp-servers/commit/6591fd3))
+
+### ❤️ Contributors
+
+- Heyongqi10 <heyongqi10@jd.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/betterhyq/sse-mcp-servers/compare/v0.0.2...v0.0.3)
