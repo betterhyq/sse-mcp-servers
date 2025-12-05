@@ -1722,6 +1722,9 @@ packages:
     resolution: {integrity: sha1-i/udVxRzGea/foUwl5xcT6aLpgI=, tarball: http://registry.m.jd.com/c12/download/c12-3.3.2.tgz}
     peerDependencies:
       magicast: '*'
+    peerDependenciesMeta:
+      magicast:
+        optional: true
 
   call-bind-apply-helpers@1.0.2:
     resolution: {integrity: sha1-S1QowiK+mF15w9gmV0edvgtZstY=, tarball: http://registry.m.jd.com/call-bind-apply-helpers/download/call-bind-apply-helpers-1.0.2.tgz}
@@ -5142,9 +5145,11 @@ snapshots:
       - supports-color
     optional: true
 
-  '@babel/helper-string-parser@7.27.1': {}
+  '@babel/helper-string-parser@7.27.1':
+    optional: true
 
-  '@babel/helper-validator-identifier@7.28.5': {}
+  '@babel/helper-validator-identifier@7.28.5':
+    optional: true
 
   '@babel/helper-validator-option@7.27.1':
     optional: true
@@ -5167,6 +5172,7 @@ snapshots:
   '@babel/parser@7.28.5':
     dependencies:
       '@babel/types': 7.28.5
+    optional: true
 
   '@babel/plugin-proposal-export-default-from@7.27.1(@babel/core@7.28.5)':
     dependencies:
@@ -5598,6 +5604,7 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
+    optional: true
 
   '@borewit/text-codec@0.1.1': {}
 
@@ -7402,12 +7409,13 @@ snapshots:
       exsolve: 1.0.8
       giget: 2.0.0
       jiti: 2.6.1
-      magicast: 0.5.1
       ohash: 2.0.11
       pathe: 2.0.3
       perfect-debounce: 2.0.0
       pkg-types: 2.3.0
       rc9: 2.1.2
+    optionalDependencies:
+      magicast: 0.5.1
 
   call-bind-apply-helpers@1.0.2:
     dependencies:
@@ -9158,6 +9166,7 @@ snapshots:
       '@babel/parser': 7.28.5
       '@babel/types': 7.28.5
       source-map-js: 1.2.1
+    optional: true
 
   make-dir@2.1.0:
     dependencies:
