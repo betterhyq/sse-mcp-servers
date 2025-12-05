@@ -1,4 +1,4 @@
-name: Test Node
+name: TEST ALL
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: ["master"]
 
 jobs:
-  test:
+  test-node:
     runs-on: ubuntu-22.04
 
     strategy:
@@ -29,3 +29,23 @@ jobs:
         run: pnpm install
       - name: Test
         run: pnpm run test:node
+
+  test-python:
+    runs-on: ubuntu-22.04
+
+    strategy:
+      matrix:
+        python-version: ["3.10.15"]
+
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.9.15"
+      - name: Test
+        run: uv run pytest python/
