@@ -1,7 +1,7 @@
 {
   "name": "node",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist",
@@ -19,7 +19,10 @@
     "format:node": "prettier --write .",
     "format:python": "uv run black python/ && uv run isort python/",
     "lint:node": "eslint node/ --fix",
-    "lint:python": "uv run flake8 python/ && uv run mypy python/"
+    "lint:python": "uv run flake8 python/ && uv run mypy python/",
+    "bump:major": "changelogen --major",
+    "bump:minor": "changelogen --minor",
+    "bump:patch": "changelogen --release --push --patch"
   },
   "devDependencies": {
     "@eslint/css": "0.12.0",
@@ -27,6 +30,7 @@
     "@eslint/json": "0.13.2",
     "@eslint/markdown": "7.5.1",
     "@types/node": "24.10.1",
+    "changelogen": "0.6.2",
     "eslint": "9.39.1",
     "globals": "16.5.0",
     "prettier": "3.7.4",
