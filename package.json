@@ -23,7 +23,8 @@
     "bump": "changelogen --clean --release --push",
     "bump:major": "pnpm run bump --major",
     "bump:minor": "pnpm run bump --minor",
-    "bump:patch": "pnpm run bump --patch"
+    "bump:patch": "pnpm run bump --patch",
+    "commit": "cz"
   },
   "devDependencies": {
     "@eslint/css": "0.12.0",
@@ -32,6 +33,8 @@
     "@eslint/markdown": "7.5.1",
     "@types/node": "24.10.1",
     "changelogen": "0.6.2",
+    "commitizen": "4.3.1",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "9.39.1",
     "globals": "16.5.0",
     "prettier": "3.7.4",
@@ -45,5 +48,10 @@
     "fastmcp": "3.24.0",
     "zod": "4.1.13"
   },
-  "packageManager": "pnpm@10.13.1"
+  "packageManager": "pnpm@10.13.1",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
