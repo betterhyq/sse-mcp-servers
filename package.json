@@ -20,9 +20,10 @@
     "format:python": "uv run black python/ && uv run isort python/",
     "lint:node": "eslint node/ --fix",
     "lint:python": "uv run flake8 python/ && uv run mypy python/",
-    "bump:major": "changelogen --major",
-    "bump:minor": "changelogen --minor",
-    "bump:patch": "changelogen --release --push --patch"
+    "bump": "changelogen --clean --release --push",
+    "bump:major": "pnpm run bump --major",
+    "bump:minor": "pnpm run bump --minor",
+    "bump:patch": "pnpm run bump --patch"
   },
   "devDependencies": {
     "@eslint/css": "0.12.0",
