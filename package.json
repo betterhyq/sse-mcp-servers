@@ -10,12 +10,14 @@
   "scripts": {
     "build": "tsc && vite build",
     "start": "node node/dist/sse-mcp-servers.js",
+    "start:python": "uv run python/main.py",
     "start:huaweiyun:node": "/www/server/nodejs/v24.11.1/bin/node /root/sse-mcp-servers/node/dist/sse-mcp-servers.js",
     "start:huaweiyun:python": "echo 'xxxxxx' | sudo -S /snap/bin/uv run /root/sse-mcp-servers/python/main.py",
     "format": "prettier --write .",
     "lint": "eslint node/",
     "lint:fix": "eslint node/ --fix",
-    "postinstall": "pnpm build"
+    "postinstall": "pnpm build",
+    "test": "vitest run node/"
   },
   "devDependencies": {
     "@eslint/css": "0.12.0",
@@ -28,7 +30,8 @@
     "prettier": "3.7.4",
     "typescript": "5.9.3",
     "typescript-eslint": "8.48.1",
-    "vite": "7.2.6"
+    "vite": "7.2.6",
+    "vitest": "4.0.15"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.24.3",

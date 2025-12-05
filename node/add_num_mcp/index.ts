@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { FastMCP } from "fastmcp";
+import { add } from "./add";
 
 export const main = (port: number) => {
   const server = new FastMCP({
@@ -15,7 +16,7 @@ export const main = (port: number) => {
       b: z.number(),
     }),
     execute: async (args) => {
-      return String(args.a + args.b);
+      return add(args);
     },
   });
 
