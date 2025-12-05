@@ -9,10 +9,21 @@
   ],
   "scripts": {
     "build": "tsc && vite build",
-    "start": "node dist/sse-mcp-servers.js"
+    "start": "node dist/sse-mcp-servers.js",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
+    "@eslint/css": "0.12.0",
+    "@eslint/js": "9.39.1",
+    "@eslint/json": "0.13.2",
+    "@eslint/markdown": "7.5.1",
+    "eslint": "9.39.1",
+    "globals": "16.5.0",
+    "prettier": "3.7.4",
     "typescript": "5.9.3",
+    "typescript-eslint": "8.48.1",
     "vite": "7.2.6"
   },
   "dependencies": {
