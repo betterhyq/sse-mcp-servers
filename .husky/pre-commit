@@ -1,0 +1,4 @@
+pnpm run format:node
+pnpm run format:python
+
+git add .

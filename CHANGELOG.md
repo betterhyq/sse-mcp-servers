@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## v0.0.5
 
 [compare changes](https://github.com/betterhyq/sse-mcp-servers/compare/v0.0.4...v0.0.5)
@@ -62,7 +61,6 @@
 
 ## v0.0.1
 
-
 ### 🚀 Enhancements
 
 - 初始化工程 ([1f83c55](https://github.com/betterhyq/sse-mcp-servers/commit/1f83c55))
@@ -92,4 +90,3 @@
 ### ❤️ Contributors
 
 - Heyongqi10 <heyongqi10@jd.com>
-
