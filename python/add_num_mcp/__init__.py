@@ -1,6 +1,8 @@
 from pydantic import Field
 from mcp.server.fastmcp import FastMCP
 
+from . import add_tool
+
 def main(port: int) -> None:
     mcp = FastMCP(
         name="Add Num MCP", 
@@ -10,7 +12,7 @@ def main(port: int) -> None:
 
     @mcp.tool(description="Add Num MCP")
     def add(a: int = Field(description="The first number"), b: int = Field(description="The second number")) -> str:
-        return str(a + b)
+        return add_tool.add(a, b)
         
 
     mcp.run(transport="sse")
